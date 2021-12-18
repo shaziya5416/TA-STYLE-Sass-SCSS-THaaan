@@ -1,0 +1,104 @@
+.price {
+    padding: 2rem 0;
+    text-align: center;
+    .price-heading {
+      color: $grey;
+    }
+    .pricing-cards-container {
+      margin-top: 2rem;
+      flex-direction: column;
+    }
+  }
+  
+  .pricing-card {
+    margin-top: 1rem;
+    text-transform: capitalize;
+    padding: 1.5rem 0;
+    border: 1px solid $light;
+    border-radius: 0.4rem;
+    h5 {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    .price-description {
+      p {
+        font-size: 0.8rem;
+        color: $grey;
+      }
+      .product-price {
+        color: $primary;
+        font-size: 2.5rem;
+        strong {
+          font-weight: 900;
+        }
+      }
+    }
+    .product-description {
+      margin: 2rem 0;
+      h6 {
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      li {
+        margin-bottom: 0.5rem;
+        color: $grey;
+      }
+    }
+  }
+  
+  .faq {
+    padding: 2rem 0;
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: $primary;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 1rem;
+      color: $light;
+      margin-top: 1rem;
+    }
+    h2,
+    p {
+      text-align: center;
+    }
+  }
+  .faq-container {
+    margin-top: 2rem;
+    flex-direction: column;
+    .faq-card {
+      border: 1px solid $light;
+      border-radius: 0.4rem;
+      margin-top: 1rem;
+      padding: 1rem;
+    }
+    h5 {
+      font-size: 1.2rem;
+      color: $primary;
+      font-weight: 700;
+    }
+    p {
+      text-align: left;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .price {
+      .pricing-cards-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .pricing-card {
+        flex: 0 1 32%;
+      }
+    }
+    .faq-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .faq-card {
+        flex: 0 1 49%;
+      }
+    }
+  }

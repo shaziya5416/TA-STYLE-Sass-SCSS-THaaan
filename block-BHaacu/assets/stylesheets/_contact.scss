@@ -1,0 +1,53 @@
+.contact {
+    padding: 3rem 0;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+      text-transform: capitalize;
+      font-weight: 900;
+    }
+    p {
+      margin-top: 2rem;
+      color: $grey;
+    }
+    .form-content-container {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+    form {
+      margin-top: 2rem;
+    }
+    .form-control {
+      padding: 1rem 1rem;
+      font-size: 1rem;
+      border: 1px solid $light;
+      margin-bottom: 1rem;
+      width: 100%;
+      border-radius: 0.4rem;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .contact {
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      .form-content-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .map {
+        flex: 0 1 40%;
+      }
+      form {
+        margin-top: 0;
+        flex: 0 1 55%;
+      }
+      button {
+        font-size: 1.2rem;
+      }
+    }
+  }

@@ -1,0 +1,48 @@
+$danger: #dc3c45;
+$secondary: #f2f2f2;
+$primary: #1b1e24;
+$primary-alt: #222222;
+$grey: #343a40;
+$light: #bdbdbd;
+
+$text-base: 16px;
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Archivo", sans-serif;
+  line-height: 1.5;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  padding: 1em 2em;
+  border-radius: 1.5rem;
+  text-transform: capitalize;
+}
+.btn-primary {
+  border: none;
+  color: #ffffff;
+  background-color: $danger;
+}
+.btn-secondary {
+  border: 1px solid $danger;
+  color: $danger;
+  background: transparent;
+}
+img {
+  object-fit: cover;
+}

@@ -1,0 +1,503 @@
+.address-container {
+    background-color: $danger;
+    padding: 0.5rem 0;
+    .ad-cont {
+      flex-direction: column;
+      align-items: center;
+      color: #ffffff;
+    }
+    address,
+    ul {
+      font-size: 0.7rem;
+    }
+    address p {
+      margin: 0 0.5rem;
+    }
+    ul li {
+      margin: 0 0.5rem;
+    }
+    a {
+      color: #ffffff;
+    }
+  }
+  .nav-container {
+    background-color: $secondary;
+  }
+  #toggle:checked ~ nav {
+    display: flex;
+    ul {
+      flex-direction: column;
+      li {
+        margin-top: 1rem;
+      }
+    }
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 2rem 0;
+    background: $secondary;
+    top: 4rem;
+    left: 0;
+    text-align: center;
+  }
+  .pages,
+  .blog {
+    position: relative;
+  }
+  .dropdown {
+    text-align: center;
+    display: none;
+  }
+  .pages:hover {
+    .dropdown-one {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: $secondary;
+      width: 10rem;
+      padding: 1rem;
+      top: 1.5rem;
+      // left: -50%;
+      z-index: 100;
+    }
+  }
+  .blog:hover {
+    .dropdown-two {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: $secondary;
+      width: 10rem;
+      padding: 1rem;
+      top: 1.5rem;
+  
+      z-index: 100;
+    }
+  }
+  .menu {
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    nav,
+    input {
+      display: none;
+    }
+    label {
+      background-color: $danger;
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.4rem;
+      color: #ffffff;
+    }
+    a {
+      color: $danger;
+      font-weight: 900;
+      font-size: 1.5rem;
+    }
+    a span {
+      margin-left: 0.2rem;
+      color: $primary;
+    }
+  }
+  .hero {
+    background-image: url("../media/banner-1.jpg");
+    background-size: cover;
+    background-position: 80% 0%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+    h1,
+    p {
+      color: $primary;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      width: 70%;
+      text-transform: capitalize;
+    }
+    button {
+      margin-top: 2rem;
+    }
+  }
+  .services {
+    padding: 3rem 0;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: $primary;
+      text-transform: capitalize;
+    }
+    p {
+      color: $grey;
+    }
+    .card-container {
+      margin-top: 2rem;
+      flex-direction: column;
+      article {
+        padding: 1rem;
+        border: 1px solid $light;
+        border-radius: 0.5rem;
+        margin-top: 2rem;
+      }
+      img {
+        width: 20%;
+      }
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      p {
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+      img,
+      h3,
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .solutions {
+    background-color: $secondary;
+    padding: 2rem 0;
+    text-align: center;
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 900;
+    }
+    p,
+    button {
+      margin-top: 2rem;
+    }
+    p {
+      color: $grey;
+      font-size: 1.2rem;
+    }
+  }
+  .team {
+    padding: 2rem 0;
+    text-align: center;
+    .container {
+      flex-direction: column;
+      .team-content {
+        margin-bottom: 2rem;
+        h2 {
+          font-size: 2rem;
+          font-weight: 900;
+          color: $primary;
+        }
+        p {
+          font-size: 1.2rem;
+          color: $light;
+        }
+        img {
+          width: 30%;
+        }
+        p,
+        button,
+        h2 {
+          margin-top: 1rem;
+        }
+      }
+      .team-image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .consultancy {
+    padding-top: 2rem;
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: $primary;
+    }
+    p {
+      font-size: 1.2rem;
+      color: $grey;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    p,
+    img {
+      margin-top: 2rem;
+    }
+  }
+  .clients {
+    padding: 3rem 0;
+    background-color: $secondary;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: capitalize;
+    }
+    .lg-display-img {
+      display: none;
+    }
+  }
+  .client-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 0;
+    div {
+      flex: 0 1 30%;
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+      }
+    }
+  }
+  .footer {
+    padding: 5rem 0;
+    background-color: $grey;
+    color: $light;
+    .navigation-footer {
+      text-transform: capitalize;
+      div {
+        margin-bottom: 2rem;
+      }
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      p,
+      li {
+        font-size: 0.9rem;
+        line-height: 2.5;
+      }
+    }
+    .navigation-footer div:last-child {
+      li {
+        margin-right: 1rem;
+      }
+    }
+    small {
+      text-align: center;
+      font-size: 0.8rem;
+      display: block;
+    }
+    small span {
+      color: #ffffff;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .address-container {
+      .ad-cont {
+        flex-direction: row;
+        justify-content: space-between;
+        address,
+        ul {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .hero {
+      background-position: 100% 60%;
+      h1 {
+        font-size: 5rem;
+        padding: 0 2rem 0 0;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      button {
+        font-size: 1.2rem;
+      }
+    }
+    .menu {
+      nav {
+        display: block;
+        li {
+          margin-left: 1rem;
+          cursor: pointer;
+        }
+      }
+      label {
+        display: none;
+      }
+      a {
+        font-size: 2rem;
+      }
+      .pages:hover {
+        .dropdown-one {
+          width: 10rem;
+          padding: 1rem;
+          top: 3.3rem;
+        }
+      }
+      .blog:hover {
+        .dropdown-two {
+          width: 10rem;
+          padding: 1rem;
+          top: 3.3rem;
+        }
+      }
+    }
+    .services {
+      padding: 5rem 0;
+      h2 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      .card-container {
+        flex-direction: row;
+        justify-content: space-between;
+        article {
+          padding: 3rem 1rem;
+          flex: 0 1 32%;
+        }
+        h3 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        img,
+        h3,
+        p {
+          margin-bottom: 1.5rem;
+        }
+        button {
+          font-size: 1rem;
+        }
+      }
+    }
+  
+    .solutions {
+      padding: 5rem 0;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        padding: 0 2rem;
+      }
+      button {
+        font-size: 1rem;
+      }
+    }
+  
+    .team {
+      .container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .team-content,
+      .team-image {
+        flex: 0 1 45%;
+      }
+      .team-image {
+        img {
+          height: 100%;
+        }
+      }
+    }
+  
+    .why-us {
+      padding: 4rem;
+      .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      text-align: left;
+      h5 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      button {
+        font-size: 1rem;
+      }
+      p,
+      button {
+        margin-top: 0;
+      }
+    }
+  
+    .consultancy {
+      padding-top: 4rem;
+      .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      h2 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+      }
+      p,
+      img {
+        margin-top: 0;
+      }
+    }
+    .consultancy-content,
+    .consultancy-image-container {
+      align-self: stretch;
+      flex: 0 1 45%;
+    }
+    .consultancy-image-container {
+      img {
+        object-fit: contain;
+      }
+    }
+  
+    .clients {
+      padding: 5rem 0;
+      h2 {
+        font-size: 4rem;
+      }
+      .lg-display-img {
+        display: block;
+      }
+      .client-container {
+        div {
+          flex: 0 1 15%;
+        }
+      }
+    }
+  
+    .footer {
+      .navigation-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .col-lg {
+          flex: 0 1 25%;
+        }
+        .col-lg {
+          flex: 0 1 20%;
+        }
+        p,
+        li {
+          font-size: 1rem;
+        }
+        h4 {
+          font-size: 2rem;
+        }
+      }
+      small {
+        font-size: 1rem;
+      }
+    }
+  }
