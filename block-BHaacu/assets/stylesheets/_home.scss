@@ -1,0 +1,150 @@
+.about-hero {
+    padding: 3rem 0;
+    color: #ffffff;
+    background-color: $danger;
+    text-align: center;
+    h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .consultancy {
+    a {
+      color: $danger;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+    }
+  }
+  .consultancy-container {
+    flex-direction: column;
+  }
+  
+  .about-mission {
+    padding: 3rem 0;
+    .container {
+      flex-direction: column;
+    }
+  }
+  .mission-image-container {
+    img {
+      width: 100%;
+    }
+  }
+  .mission-cards {
+    .mission-card {
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+    .mission-icon {
+      flex: 0 1 20%;
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 3rem;
+        color: $primary;
+      }
+    }
+    .mission-card-content {
+      flex: 0 1 70%;
+      h4 {
+        font-weight: 700;
+        color: $primary;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+      }
+      p {
+        color: $light;
+      }
+    }
+  }
+  
+  .team-card-container {
+    flex-direction: column;
+  }
+  .our-team {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: $secondary;
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: $primary;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .team-card {
+      background-color: #ffffff;
+      box-shadow: 0 0 0.4rem rgba($color: #000000, $alpha: 0.3);
+      margin-top: 2rem;
+      border-radius: 0.2rem;
+      img {
+        border-radius: 0.2rem;
+        width: 100%;
+      }
+    }
+    .team-member-details {
+      padding: 1rem 0;
+    }
+    h4 {
+      color: $primary;
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    small {
+      color: $danger;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+  }
+  
+  .solutions-about {
+    background-color: #ffffff;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .about-hero {
+      padding: 4rem;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    .consultancy-container {
+      flex-direction: row;
+      justify-content: space-between;
+      div {
+        flex: 0 1 48%;
+      }
+    }
+    .about-mission {
+      .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .mission-cards {
+        flex: 0 1 60%;
+      }
+      .mission-image-container {
+        flex: 0 1 28%;
+      }
+    }
+    .team-card-container {
+      flex-direction: row;
+      justify-content: space-between;
+      .team-card {
+        flex: 0 1 23%;
+      }
+    }
+  }
